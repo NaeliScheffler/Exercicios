@@ -11,6 +11,7 @@ public class ex_3_ {
             String nome = texto.nextLine().toUpperCase();
 
             System.out.println("\nAs iniciais do nome são:\n");
+            nome = nome.replaceAll("da|das|do|dos|de|di|e", "");
 
             System.out.print(nome.charAt(0));
             for ( i = 0; i < nome.length(); i++) {
