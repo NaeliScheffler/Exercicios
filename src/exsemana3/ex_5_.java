@@ -9,7 +9,7 @@ public class ex_5_ {
         System.out.println("\nInsira uma frase:\n");
         String palavras = texto.nextLine();
 
-        palavras= palavras.replaceAll(" ","");
+        palavras = palavras.trim().replaceAll("\\s+", " ");
 
         System.out.println(palavras);
         texto.close();
