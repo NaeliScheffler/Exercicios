@@ -1,22 +1,17 @@
 package ex_semana4;
 import java.util.Scanner;
 public class ex_2 {
-    public static void main(String[] args) {
+    public static void main(String[] argv) {
 
         Scanner texto = new Scanner(System.in);
-        String[] a;
-        int j;
-        System.out.print("Entre com uma frase: ");
-        String frase = texto.nextLine();
+        String frase="Socorram-me, subi no ônibus em Marrocos";
+        String[] aux=frase.split(" ");
 
-        a = frase.split(" ");
-        j=(a.length);
-        j=j-1;
-        for(int i=0;i<a.length;i++){
-            System.out.println(a[j]);
-            j--;
+        StringBuilder aux2=new StringBuilder();
+        for(int i=aux.length-1; i>=0;i--){
+            aux2.append(aux[i]).append(" ");
         }
-
+        System.out.println(aux2);
 
 
 
