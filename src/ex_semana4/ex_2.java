@@ -6,7 +6,6 @@ public class ex_2 {
         Scanner texto = new Scanner(System.in);
         String frase="Socorram-me, subi no ônibus em Marrocos";
         String[] aux=frase.split(" ");
-
         StringBuilder aux2=new StringBuilder();
         for(int i=aux.length-1; i>=0;i--){
             aux2.append(aux[i]).append(" ");
