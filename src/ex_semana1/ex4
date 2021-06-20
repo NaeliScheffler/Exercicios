@@ -1,0 +1,27 @@
+#include <stdlib.h>
+
+#include <stdio.h>
+
+#include <locale.h>
+
+int main() {
+  setlocale(LC_ALL, "Portuguese");
+  int vetor[20], i, a = 0, b = 19;
+
+  for (i = 0; i < 20; i++) {
+    printf("\n Entre com um numero: \n");
+    scanf("%d", & vetor[i]);
+  }
+  for (i = 0; i < 20; i++) {
+    printf("\n O número de posição %d digitado foi:%d\ n", i, vetor[i]);
+  }
+  for (i = 0; i < 10; i++) {
+    vetor[a] = vetor[b];
+    a++;
+    b--;
+  }
+  for (i = 0; i < 20; i++) {
+    printf("\n O número de posição %d após a troca é:%d \n", i, vetor[i]);
+  }
+  return 0;
+}

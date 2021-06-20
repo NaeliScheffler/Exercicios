@@ -1,0 +1,34 @@
+#include <stdlib.h>
+
+#include <stdio.h>
+
+#include <locale.h>
+
+
+int main() {
+  setlocale(LC_ALL, "Portuguese");
+
+  int V[10], N, i, j, encontr = 0, p = 0;
+  for (i = 0; i < 10; i++) {
+    printf("\n Insira o valor %d para V: \n", i + 1);
+    scanf("%d", & V[i]);
+  }
+  printf("\n Insira um valor para N: \n");
+  scanf("%d", & N);
+
+  for (i = 0; i < 10; i++) {
+    for (j = 0; j < 1; j++) {
+      if (V[i] == N) {
+        encontr = 100;
+        p = i;
+      }
+    }
+  }
+  if (encontr == 100) {
+    printf("\n  Encontrado na posição %d \n", p);
+  } else {
+    printf("\n Número não encontrado \n");
+  }
+
+  return 0;
+}
