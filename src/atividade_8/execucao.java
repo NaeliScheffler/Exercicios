@@ -11,6 +11,7 @@ public class execucao {
         f1.data_entr=data;
         f1.aumento(100);
 
+        f1.anual();
 
 
 

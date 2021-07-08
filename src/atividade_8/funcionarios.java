@@ -11,33 +11,29 @@ public class funcionarios {
     public boolean ativo;
 
 
-    public boolean aumento(double valor) {
-        if (ativo == true) {
+    public void aumento(double valor) {
+        if (ativo) {
             this.salario += valor;
             System.out.println("\n Salário reajustado, novo salario: \n" + this.salario);
 
-            return true;
         } else {
             System.out.println("\n Funcionario demitido \n");
-            return false;
         }
     }
 
-    public boolean demite() {
-        if (ativo == true) {
+    public void demite() {
+        if (ativo) {
             System.out.println("\n Funcionario foi demitido \n");
             ativo = false;
-            return true;
         } else {
             System.out.println("\n O funcionario nao trabalha mais na empresa \n");
-            return false;
         }
     }
 
 
-    public void anual(double vAnual) {
+    public void anual() {
         System.out.println("\n O salario anual do funcionario" + nome + " eh \n:");
-        vAnual = salario * 12;
+        double vAnual = salario * 12;
         System.out.println(vAnual);
 
     }
@@ -61,35 +57,19 @@ public class funcionarios {
                 if ((mes >= 1) && (mes <= 12)) {
 
                     if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
-                        if (dia >= 1 && dia <= 31) {
-                            return true;
-                        } else {
-                            return false;
-                        }
+                        return dia >= 1 && dia <= 31;
                     } else if (mes == 4 || mes == 6 || mes == 9 || mes == 11) {
 
-                        if (dia >= 1 && dia <= 30) {
-                            return true;
-                        } else {
-                            return false;
-                        }
+                        return dia >= 1 && dia <= 30;
                     } else {
                         if (ano % 4 != 0) {
 
-                            if (dia >= 1 && dia <= 28) {
-                                return true;
-                            } else {
-                                return false;
-                            }
+                            return dia >= 1 && dia <= 28;
                         } else if (ano % 4 == 0) {
 
                             if (ano % 100 != 0) {
 
-                                if (dia >= 1 && dia <= 29) {
-                                    return true;
-                                } else {
-                                    return false;
-                                }
+                                return dia >= 1 && dia <= 29;
                             } else {
 
                                 if (ano % 400 == 0) {
@@ -110,7 +90,7 @@ public class funcionarios {
         }
 
 
-        public void mostrarDataform() {
+        public void Dataform() {
             if (validaData()) {
                 System.out.println(this.dia + "/" + this.mes + "/" + this.ano);
             } else {
