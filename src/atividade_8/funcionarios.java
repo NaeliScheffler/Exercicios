@@ -32,7 +32,7 @@ public class funcionarios {
 
 
     public void anual() {
-        System.out.println("\n O salario anual do funcionario" + nome + " eh \n:");
+        System.out.println("\n O salario anual do funcionario " + nome + " eh \n:");
         double vAnual = salario * 12;
         System.out.println(vAnual);
 
