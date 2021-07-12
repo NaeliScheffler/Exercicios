@@ -72,11 +72,7 @@ public class funcionarios {
                                 return dia >= 1 && dia <= 29;
                             } else {
 
-                                if (ano % 400 == 0) {
-                                    return true;
-                                } else {
-                                    return false;
-                                }
+                                return ano % 400 == 0;
                             }
                         }
                     }

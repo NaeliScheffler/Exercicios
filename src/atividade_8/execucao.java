@@ -1,8 +1,7 @@
 package atividade_8;
-import java.util.Scanner;
+
 public class execucao {
     public static void main(String[] args) {
-        Scanner texto = new Scanner(System.in);
         funcionarios f1 = new funcionarios();
         f1.nome = "Hugo";
         f1.salario = 100;
@@ -26,6 +25,8 @@ public class execucao {
         } else {
             System.out.println("diferentes");
         }
+
+
         f1.demite();
         f1.mostrar();
 
