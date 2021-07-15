@@ -35,14 +35,15 @@ public class continente {
 
         }
     public double gettotalp () {
-        return this.totalPessoas;
+        return totalPessoas;
     }
 
         public double getTotalDimensao () {
             return this.totalDimensao;
         }
-
-
+public double densidade(){
+            return totalPessoas/totalDimensao;
+}
 
 
     public Integer maiorPop (pais pais ){

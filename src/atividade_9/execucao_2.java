@@ -6,7 +6,8 @@ public class execucao_2 {
       c1.continenteNome("Asia");
       c1.continentePais("China");
       c1.getTotalDimensao();
-      gettotalp("Asia");
+      c1.gettotalp();
+      c1.densidade();
 
     }
 }
