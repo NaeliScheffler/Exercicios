@@ -2,11 +2,11 @@ package atividade_9;
 import java.util.ArrayList;
 public class execucao_1 {
     public static void main(String[] args) {
-            Pais p1 = new Pais("BRA", "BRASIL", 232323.23);
-            Pais p2 = new Pais("ARG", "ARGENTINA", 2323.23);
-            Pais p3 = new Pais("URU", "URUGUAI", 2323.23);
-            Pais p4 = new Pais("EQU", "EQUADOR", 2323.23);
-            Pais p5 = new Pais("BOL", "BOLÍVIA", 2323.23);
+            pais p1 = new pais("BRA", "BRASIL", 232323.23);
+            pais p2 = new pais("ARG", "ARGENTINA", 2323.23);
+            pais p3 = new pais("URU", "URUGUAI", 2323.23);
+            pais p4 = new pais("EQU", "EQUADOR", 2323.23);
+            pais p5 = new pais("BOL", "BOLÍVIA", 2323.23);
 
             p1.paisFronteira.add(p2);
             p1.paisFronteira.add(p3);
@@ -28,8 +28,8 @@ public class execucao_1 {
             System.out.println(resp);
 
             System.out.println("Paises que fazem fronteira com o Brasil e com a Argentina:");
-            ArrayList<Pais> comuns = p1.vizinhosComuns(p2);
-            for(Pais p : comuns){
+            ArrayList<pais> comuns = p1.vizinhosComuns(p2);
+            for(pais p : comuns){
                 System.out.println(p.getNome());
             }
 
