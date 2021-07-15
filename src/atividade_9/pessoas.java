@@ -20,7 +20,7 @@ public class pessoas {
         this.vP=null;
 
     }
-    public pessoas(String nome, String pai, String mae,String avM, String vM, String avP, String vP) {
+    public void pessoasAdd(String nome, String pai, String mae, String avM, String vM, String avP, String vP) {
         this.nome = nome;
         this.pai = pai;
         this.mae = mae;
@@ -32,21 +32,27 @@ public class pessoas {
     }
 
     public String getNomep() {
+
         return nome;
     }
     public void setNomep(){
+
         this.nome=nome;
     }
     public String getMae() {
+
         return mae;
     }
     public void setMae(){
+
         this.mae=mae;
     }
     public String getPai() {
+
         return pai;
     }
     public void setPai(){
+
         this.pai=pai;
     }
 
@@ -63,9 +69,10 @@ public class pessoas {
         }
       return mesmap;
     }
-    public String ehIrma(pessoas outraPessoa) {
+
+    public String ehIrma(  pessoas outraPessoa) {
         String irma="";
-        if (this.mae.equals(outraPessoa.getMae())) {
+        if (this.mae.equals(outraPessoa.getMae())){
             if (this.pai.equals(outraPessoa.getPai())){
                 irma="true";
             }
