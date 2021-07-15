@@ -39,7 +39,7 @@ public class continente {
     }
 
         public double getTotalDimensao () {
-            return this.totalDimensao;
+            return totalDimensao;
         }
 public double densidade(){
             return totalPessoas/totalDimensao;
