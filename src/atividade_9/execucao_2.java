@@ -6,8 +6,16 @@ public class execucao_2 {
       continente c1=new continente();
       c1.continenteNome("America");
 
-      c1.continentePais("Brasil");
-      c1.addPais(Brasil);
+      c1.continentePais("Brasil",8.516000,211.000000);
+      c1.continentePais("Argentina",2.780000,44.940000);
+      c1.densidade();
+      c1.getTotalp();
+      c1.getTotalDimensao();
+      c1.maiorPopula();
+      c1.menorPopula();
+      c1.maiorDimen();
+      c1.menorDimen();
+      c1.razaoMaior();
 
     }
 }
