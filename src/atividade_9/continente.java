@@ -3,62 +3,80 @@ package atividade_9;
 public class continente {
     public String nome;
     public pais[] paises;
-    public int qtpaises;
-    public double totalDimensao;
+    public int qtpaises=0;
     public int totalPessoas;
+    public double totalDimensao;
     public double densidade;
-    public Integer maiorP;
-    public Integer menorP;
+    public double paisD[];
+    public double paisP[];
+    public double maiorP;
+    public double menorP;
+    public double maiorD;
+    public double menorD;
 
 
-    public void continenteNome(String nome) {
-        this.nome = nome;
-        this.paises = new pais[30];
+
+        public void continenteNome(String nome) {
+            this.nome = nome;
+            this.paises = new pais[30];
+        }
+
+        public void continentePais(String paises, Double dimensao, Double populacao) {
+            this.paises = new pais[40];
+            this.paisD[qtpaises] = dimensao;
+            this.paisP[qtpaises] = populacao;
+            this.qtpaises++;
+            this.totalDimensao = this.totalDimensao + paisD[qtpaises];
+            this.totalPessoas = (int) (this.totalPessoas + paisP[qtpaises]);
+            this.densidade = this.totalPessoas / this.totalDimensao;
+            if (maiorP < paisP[qtpaises]) {
+                maiorP = paisP[qtpaises];
+            }
+            if (menorP > paisP[qtpaises]) {
+                menorP=paisP[qtpaises];
+            }
+            if (maiorD < paisD[qtpaises]) {
+                maiorD=paisD[qtpaises];
+            }
+            if (menorD > paisD[qtpaises]) {
+                menorD=paisD[qtpaises];
+            }
+        }
+
+
+        public double gettotalp() {
+            return totalPessoas;
+        }
+
+        public double getTotalDimensao() {
+            return totalDimensao;
+        }
+
+        public double densidade() {
+            return totalPessoas / totalDimensao;
+        }
+
+
+        public double maiorPopula() {
+            return maiorP;
+
+        }
+
+        public double menorPopula() {
+            return menorP;
+        }
+        public double menorDimen() {
+                return menorD;
+
+        }
+        public double maiorDimen() {
+        return maiorD;
+
+    }
+    public double razaoMaior(){
+            return maiorD/menorD;
     }
 
-    public void continentePais(String paises) {
-        this.nome = nome;
-        this.paises = new pais[40];
-        qtpaises = 0;
-    }
-
-    public void addPais(pais pais) {
-        this.paises[qtpaises] = pais;
-        this.qtpaises++;
-        this.totalDimensao = this.totalDimensao + pais.getDimensao();
-        this.totalPessoas = this.totalPessoas + pais.getPop();
-        this.densidade = this.totalPessoas / this.totalDimensao;
-
-        this.maiorP = paises[0].getPop();
-
-
-        this.menorP = paises[0].getPop();
-
-
-    }
-
-    public double gettotalp() {
-        return totalPessoas;
-    }
-
-    public double getTotalDimensao() {
-        return totalDimensao;
-    }
-
-    public double densidade() {
-        return totalPessoas / totalDimensao;
-    }
-
-
-    public double maiorpopula() {
-        return maiorP;
-
-    }
-
-    public double menorpopula() {
-        return menorP;
-
-    }
 }
 
 
