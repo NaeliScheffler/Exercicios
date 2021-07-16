@@ -31,7 +31,7 @@ import java.util.ArrayList;
             this.nome = nome;
         }
 
-        public Integer getPop() {
+        public  Integer getPop() {
             return pop;
         }
 
