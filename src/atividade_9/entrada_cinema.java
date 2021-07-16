@@ -2,12 +2,12 @@ package atividade_9;
 import javax.xml.crypto.Data;
 
 public class entrada_cinema {
-public Data dataFilme;
-public float hora;
+public String dataFilme;
+public double hora;
 public int sala;
 public float valor;
 public String dadosIngresso;
-    public void iniciaAtrib(Data dataFilme,float hora,int sala,float valor){
+    public void iniciaAtrib(String dataFilme,double hora,int sala,float valor){
         this.dataFilme = dataFilme;
         this.hora = hora;
         this.sala = sala;
@@ -39,7 +39,7 @@ public String dadosIngresso;
         }
         return valor;
     }
-    public double calcularDescontoHora(float horario){
+    public double calcularDescontoHora(double horario){
         if(horario<16){
             double entrada = this.valor * .10;
             entrada = valor;
