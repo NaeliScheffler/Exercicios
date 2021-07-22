@@ -1,7 +1,5 @@
 package atividade_9;
 
-import java.util.ArrayList;
-
 public class pessoas {
     public String nome;
     public pessoas pai;
@@ -21,8 +19,7 @@ public class pessoas {
         return nome;
     }
     public void setNomep(){
-
-        this.nome=nome;
+    this.nome=nome;
     }
     public pessoas getMae() {
 

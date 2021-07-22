@@ -7,13 +7,12 @@ import java.util.ArrayList;
         public String nome;
         public Integer pop;
         public Double dimensao;
-        public ArrayList<pais> paisFronteira = new ArrayList<pais>();
+        public ArrayList<pais> paisFronteira = new ArrayList<>();
 
         public pais(String codigoIso, String nome, Double dimensao) {
             this.codigoIso = codigoIso;
             this.nome = nome;
             this.dimensao = dimensao;
-            this.pop=pop;
 
         }
 
@@ -50,23 +49,15 @@ import java.util.ArrayList;
         }
 
         public boolean ehOMesmoPais(pais outroPais){
-            if( this.codigoIso.equals(outroPais.getCodigoIso())){
-                return true;
-            }else{
-                return false;
-            }
+            return this.codigoIso.equals(outroPais.getCodigoIso());
         }
 
         public boolean ehLimitrofe(pais outroPais){
-            if( this.paisFronteira.contains(outroPais) ){
-                return true;
-            }else{
-                return false;
-            }
+            return this.paisFronteira.contains(outroPais);
         }
 
         public ArrayList<pais> vizinhosComuns(pais outroPais){
-            ArrayList<pais> comuns = new ArrayList<pais>();
+            ArrayList<pais> comuns = new ArrayList<>();
             for(pais p : this.paisFronteira){
                 if( outroPais.ehLimitrofe(p) ){
                     comuns.add(p);

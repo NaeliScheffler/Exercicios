@@ -3,7 +3,8 @@ package atividade_9;
 public class execucao_2 {
     public static void main(String[] args) {
 
-      continente c1=new continente("America");
+      Continente c1=new Continente("America");
+      c1.adicionaPais("Brasil");
 
 
 
