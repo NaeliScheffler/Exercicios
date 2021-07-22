@@ -13,6 +13,8 @@ import java.util.ArrayList;
             this.codigoIso = codigoIso;
             this.nome = nome;
             this.dimensao = dimensao;
+            this.pop=pop;
+
         }
 
         public String getCodigoIso() {

@@ -1,35 +1,20 @@
 package atividade_9;
 
+import java.util.ArrayList;
+
 public class pessoas {
     public String nome;
-    public String pai;
-    public String mae;
-    public String antecessor;
-    public String avM;
-    public String vM;
-    public String avP;
-    public String vP;
+    public pessoas pai;
+    public pessoas mae;
 
-    public pessoas(String nome) {
-        this.nome = nome;
-        this.mae = null;
-        this.pai = null;
-        this.avM = null;
-        this.vM = null;
-        this.avP = null;
-        this.vP=null;
 
+    public pessoas(String nome,String pai,String mae) {
+        this.nome=nome;
+        this.pai.nome=pai;
+        this.mae.nome=mae;
     }
-    public void pessoasAdd(String nome, String pai, String mae, String avM, String vM, String avP, String vP) {
-        this.nome = nome;
-        this.pai = pai;
-        this.mae = mae;
-        this.avM = avM;
-        this.vM = vM;
-        this.avP = avP;
-        this.vP = vP;
-        this.antecessor=mae+pai+avM+vM+avP+vP;
-    }
+
+
 
     public String getNomep() {
 
@@ -39,7 +24,7 @@ public class pessoas {
 
         this.nome=nome;
     }
-    public String getMae() {
+    public pessoas getMae() {
 
         return mae;
     }
@@ -47,7 +32,7 @@ public class pessoas {
 
         this.mae=mae;
     }
-    public String getPai() {
+    public pessoas getPai() {
 
         return pai;
     }
@@ -83,11 +68,24 @@ public class pessoas {
         return irma;
     }
 
-public void antecess(String nome, String outroNome){
-        if (this.antecessor.contains(outroNome)){
-            System.out.println("\n Eh antecessor \n");
-        }else{
-            System.out.println("\n Nao eh antecessor \n");
+public void antecess( pessoas outroNome){
+        if(getPai()==outroNome){
+            System.out.println("\n Eh seu pai. \n");
         }
+    if(getMae()==outroNome){
+        System.out.println("\n Eh sua mae. \n");
+    }
+    if(pai.getPai()==outroNome){
+        System.out.println("\n Eh seu avo \n");
+    }
+    if(pai.getMae()==outroNome){
+        System.out.println("\n Eh sua avo \n");
+    }
+    if(mae.getPai()==outroNome){
+        System.out.println("\n Eh seu avo \n");
+    }
+    if(mae.getMae()==outroNome){
+        System.out.println("\n Eh sua avo \n");
+    }
 }
 }
