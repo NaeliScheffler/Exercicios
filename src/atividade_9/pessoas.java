@@ -8,10 +8,10 @@ public class pessoas {
     public pessoas mae;
 
 
-    public pessoas(String nome,String pai,String mae) {
+    public pessoas(String nome,pessoas pai,pessoas mae) {
         this.nome=nome;
-        this.pai.nome=pai;
-        this.mae.nome=mae;
+        this.pai=pai;
+        this.mae=mae;
     }
 
 
