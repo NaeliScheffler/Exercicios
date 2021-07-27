@@ -1,11 +1,13 @@
 package atividade_9;
-import java .util. Iterator ;
+
 import java.util.ArrayList;
 
 public class cursos {
     private int codigo;
     private int quantAlunos;
     private float valorMens;
+    public int rep=0;
+    float renda=0;
 
     public int getCod() {
         return codigo;
@@ -30,10 +32,19 @@ public class cursos {
     public void setValorMens(float valorMens) {
         this.valorMens = valorMens;
     }
+    public void Renda(){
+        renda=quantAlunos*valorMens;
+    }
+    public float getRenda(){
+        return renda;
+    }
+
 
     public class aluno {
         public int cod_curso;
         public float media;
+        public ArrayList <cursos> curso = new ArrayList<>();
+
         public int getCod_curso() {
             return cod_curso;
         }
@@ -45,15 +56,16 @@ public class cursos {
         public float getMedia() {
             return media;
         }
+
         int aprv = 0;
-        int reprov=0;
-        public ArrayList <Integer> rep = new ArrayList<Integer>();
+        int reprov = 0;
+
         public void setMedia(float media) {
             if (media < 7.0) {
                 System.out.println(" A nota está abaixo da media, REPROVADO ");
                 this.media = media;
 
-               rep.add(1);
+                rep++;
             }
             if (media >= 7.0) {
                 System.out.println(" A nota está ACIMA da media, APROVADO ");
@@ -64,17 +76,28 @@ public class cursos {
                 System.out.println(" ERRO, TENTE NOVAMENTE ");
             }
         }
-            public int alunosAprov(){
-                return aprv;
-            }
+
+        public int alunosAprov() {
+            return aprv;
+        }
 
 
+        public int totalRep() {
+            return rep;
 
         }
-        public int totalRep(){
-        for(aluno a: rep){
-
+        public void maiorRenda(){
+            int j=0;
+            for (int i=0; i < this.curso.size(); i++) {
+                if (this.curso.get(i).getRenda() < renda || i == 0) {
+                    renda = this.curso.get(i).getRenda();
+                    j=i;
+                }
+            }
+            System.out.println(" O codigo do curso que gera a maior renda eh:  "+this.curso.get(j));
         }
 
     }
+
+
 }
