@@ -5,84 +5,66 @@ public class pessoas {
     public pessoas pai;
     public pessoas mae;
 
-
-    public pessoas(String nome,pessoas pai,pessoas mae) {
-        this.nome=nome;
-        this.pai=pai;
-        this.mae=mae;
-    }
-
-
-
     public String getNomep() {
-
         return nome;
     }
-    public void setNomep(){
-    this.nome=nome;
-    }
-    public pessoas getMae() {
 
+    public void setNomep(String nome) {
+        this.nome = nome;
+    }
+
+    public pessoas getMae() {
         return mae;
     }
-    public void setMae(){
 
-        this.mae=mae;
+    public void setMae(pessoas mae) {
+        this.mae = mae;
     }
-    public pessoas getPai() {
 
+    public pessoas getPai() {
         return pai;
     }
-    public void setPai(){
 
-        this.pai=pai;
+    public void setPai(pessoas pai) {
+        this.pai = pai;
     }
 
-    public String ehmesmaP(pessoas outraPessoa) {
-        String mesmap = "";
+    public void ehmesmaP(pessoas outraPessoa) {
         if (this.nome.equals(outraPessoa.getNomep())) {
-            if (this.mae.equals(outraPessoa.getMae())){
-                 mesmap="true";
-                return mesmap;
-        }
-        }
-        else {
-             mesmap="false";
-        }
-      return mesmap;
-    }
-
-    public String ehIrma(  pessoas outraPessoa) {
-        String irma="";
-        if (this.mae.equals(outraPessoa.getMae())){
-            if (this.pai.equals(outraPessoa.getPai())){
-                irma="true";
+            if (this.mae.equals(outraPessoa.getMae())) {
+                System.out.println(" Eh a mesma pessoa ");
             }
-        } else
-        {
-            irma="false";
+        } else {
+            System.out.println(" Nao eh a mesma pessoa ");
         }
-        return irma;
     }
 
-public void antecess( pessoas outroNome){
-        if(getPai()==outroNome){
-            System.out.println("\n Eh seu pai. \n");
+
+
+    public void ehIrma(pessoas outraPessoa) {
+        if (this.mae.equals(outraPessoa.getMae())) {
+            if (this.pai.equals(outraPessoa.getPai())) {
+                System.out.println(" Eh irma ");
+            }
+        } else {
+            System.out.println(" Nao eh irma ");
         }
-    if(getMae()==outroNome){
-        System.out.println("\n Eh sua mae. \n");
     }
-    if(pai.getPai()==outroNome){
-        System.out.println("\n Eh seu avo \n");
+
+    public void antecess(pessoas outroNome) {
+        if (getPai() == outroNome) {
+            System.out.println(" Eh seu pai ");
+        }
+        if (getMae().pai == outroNome) {
+            System.out.println(" Eh seu avo ");
+        }
+        if (getMae() == outroNome) {
+            System.out.println(" Eh sua mae");
+        }
+        if (getMae().mae == outroNome) {
+            System.out.println(" Eh sua avo ");
+        }
+
+
     }
-    if(pai.getMae()==outroNome){
-        System.out.println("\n Eh sua avo \n");
-    }
-    if(mae.getPai()==outroNome){
-        System.out.println("\n Eh seu avo \n");
-    }
-    if(mae.getMae()==outroNome){
-        System.out.println("\n Eh sua avo \n");
-    }
-}
 }
