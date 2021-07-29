@@ -6,8 +6,8 @@ public class cursos {
     private int codigo;
     private int quantAlunos;
     private float valorMens;
-    public int rep=0;
-    float renda=0;
+    public int rep = 0;
+    float renda = 0;
 
     public int getCod() {
         return codigo;
@@ -32,10 +32,12 @@ public class cursos {
     public void setValorMens(float valorMens) {
         this.valorMens = valorMens;
     }
-    public void Renda(){
-        renda=quantAlunos*valorMens;
+
+    public void Renda() {
+        renda = quantAlunos * valorMens;
     }
-    public float getRenda(){
+
+    public float getRenda() {
         return renda;
     }
 
@@ -43,7 +45,7 @@ public class cursos {
     public class aluno {
         public int cod_curso;
         public float media;
-        public ArrayList <cursos> curso = new ArrayList<>();
+        public ArrayList<cursos> curso = new ArrayList<>();
 
         public int getCod_curso() {
             return cod_curso;
@@ -86,18 +88,20 @@ public class cursos {
             return rep;
 
         }
-        public void maiorRenda(){
-            int j=0;
-            for (int i=0; i < this.curso.size(); i++) {
+
+        public void maiorRenda() {
+            int j = 0;
+            for (int i = 0; i < this.curso.size(); i++) {
                 if (this.curso.get(i).getRenda() < renda || i == 0) {
                     renda = this.curso.get(i).getRenda();
-                    j=i;
+                    j = i;
                 }
             }
-            System.out.println(" O codigo do curso que gera a maior renda eh:  "+this.curso.get(j));
+            System.out.println(" O codigo do curso que gera a maior renda eh:  " + this.curso.get(j));
         }
 
     }
-
-
 }
+
+
+

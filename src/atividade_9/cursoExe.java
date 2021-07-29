@@ -1,9 +1,10 @@
 package atividade_9;
 
-public class execucao_6 {
+public class cursoExe {
     public static void main(String[] args) {
         cursos c1=new cursos();
-        c1.setCod(123);
+
+        c1.setCod(1);
         c1.getCod();
         c1.setQuantAlunos(5);
         c1.getQuantAlunos();

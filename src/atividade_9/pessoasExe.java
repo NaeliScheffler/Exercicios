@@ -1,6 +1,6 @@
 package atividade_9;
 
-public class execucao_3 {
+public class pessoasExe {
     public static void main(String[] args) {
        pessoas p1=new pessoas();
        pessoas p2=new pessoas();

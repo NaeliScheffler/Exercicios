@@ -1,6 +1,6 @@
 package atividade_9;
 import java.util.ArrayList;
-public class execucao_1 {
+public class paisExe {
     public static void main(String[] args) {
             pais p1 = new pais("BRA", "BRASIL", 232323.23);
             pais p2 = new pais("ARG", "ARGENTINA", 2323.23);

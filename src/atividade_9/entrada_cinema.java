@@ -1,8 +1,8 @@
 package atividade_9;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import javax.xml.crypto.Data;
 
 public class entrada_cinema {
     public Integer dataFilme;

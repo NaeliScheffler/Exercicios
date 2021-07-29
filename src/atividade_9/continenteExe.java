@@ -2,7 +2,7 @@ package atividade_9;
 
 import java.util.ArrayList;
 
-public class execucao_2 {
+public class continenteExe {
     public static void main(String[] args) {
             Continente c1 =  new Continente ();
             c1 . setNome ( " América " );
