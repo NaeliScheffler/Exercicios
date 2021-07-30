@@ -6,6 +6,10 @@ public class Circulo extends bidimensional{
         super(caracter);
     }
     public void desenhar(){
-        System.out.printf("%s%s%s" + "%s%s%s" + "%s%s%s",caracter);
+        System.out.printf("""
+                  %s%s
+                %s%s%s%s%s
+                  %s%s
+                """,caracter,caracter,caracter,caracter,caracter,caracter,caracter,caracter,caracter);
     }
 }
