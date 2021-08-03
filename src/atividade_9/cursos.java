@@ -4,104 +4,72 @@ import java.util.ArrayList;
 
 public class cursos {
     private int codigo;
-    private int quantAlunos;
     private float valorMens;
-    public int rep = 0;
-    float renda = 0;
-
-    public int getCod() {
-        return codigo;
-    }
-
-    public void setCod(int codigo) {
-        this.codigo = codigo;
-    }
-
-    public int getQuantAlunos() {
-        return quantAlunos;
-    }
-
-    public void setQuantAlunos(int quantAlunos) {
-        this.quantAlunos = quantAlunos;
-    }
-
-    public float getValorMens() {
-        return valorMens;
-    }
-
-    public void setValorMens(float valorMens) {
-        this.valorMens = valorMens;
-    }
-
-    public void Renda() {
-        renda = quantAlunos * valorMens;
-    }
-
-    public float getRenda() {
-        return renda;
-    }
+    ArrayList < aluno > listaAluno =  new  ArrayList <> ();
 
 
-    public class aluno {
-        public int cod_curso;
-        public float media;
-        public ArrayList<cursos> curso = new ArrayList<>();
-
-        public int getCod_curso() {
-            return cod_curso;
+        public cursos( int codigo , float valorMens ) {
+            this. codigo = codigo;
+            this. valorMens = valorMens;
         }
 
-        public void setCod_curso(int cod_curso) {
-            this.cod_curso = cod_curso;
+        public  int  getCodigo () {
+            return codigo;
         }
 
-        public float getMedia() {
-            return media;
+        public  void  setCodigo ( int  codigo ) {
+            this.codigo=codigo;
         }
 
-        int aprv = 0;
-        int reprov = 0;
-
-        public void setMedia(float media) {
-            if (media < 7.0) {
-                System.out.println(" A nota está abaixo da media, REPROVADO ");
-                this.media = media;
-
-                rep++;
-            }
-            if (media >= 7.0) {
-                System.out.println(" A nota está ACIMA da media, APROVADO ");
-                this.media = media;
-                aprv++;
-            }
-            if (media < 0 || media > 10) {
-                System.out.println(" ERRO, TENTE NOVAMENTE ");
-            }
+        public  double  getValorMensalidade () {
+            return valorMens;
         }
 
-        public int alunosAprov() {
-            return aprv;
+        public  void  setValorMensalidade ( double  valorMensalidade ) {
+            this. valorMens = valorMens;
         }
 
-
-        public int totalRep() {
-            return rep;
-
+        public  int  quantAluno () {
+            return  this.listaAluno.size();
         }
 
-        public void maiorRenda() {
-            int j = 0;
-            for (int i = 0; i < this.curso.size(); i++) {
-                if (this.curso.get(i).getRenda() < renda || i == 0) {
-                    renda = this.curso.get(i).getRenda();
-                    j = i;
+        public  void  addAluno( aluno  a1 ) {
+            this.listaAluno.add (a1);
+        }
+
+        public  int  quantAprov() {
+            int quant=0;
+            for ( aluno a1 : listaAluno) {
+                if (a1.getNota()>=  7 ) {
+                    quant ++ ;
                 }
             }
-            System.out.println(" O codigo do curso que gera a maior renda eh:  " + this.curso.get(j));
+            return quant ;
+        }
+
+        public  int  quantidadeReprov() {
+            int quant=0;
+            for( aluno a1 : listaAluno) {
+                if (a1.getNota () <  7 ) {
+                    quant ++ ;
+                }
+            }
+            return quant;
+        }
+
+        public float renda () {
+            return ( float ) (listaAluno . size () *  this . valorMens);
+        }
+
+        @Override
+        public  String  toString (){
+            String string=  "Curso:"  +  this. getCodigo () +  "  " ;
+            for ( aluno a1 : listaAluno) {
+                string= string + a1 . toString () +  " - " ;
+            }
+            return string;
         }
 
     }
-}
-
 
 
