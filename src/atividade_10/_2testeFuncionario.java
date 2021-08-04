@@ -1,19 +1,19 @@
 package atividade_10;
 
-public class testeFuncionario {
+public class _2testeFuncionario {
     public static void main(String[] args) {
-        gerentes g1=new gerentes();
+        _2gerentes g1=new _2gerentes();
         g1.setNome("Joao Paulo");
         g1.setSalario(5000);
         g1.setNomeUsuario("JoaoPaulo@jp");
         g1.setSenha("J1O2A3O4");
 
-        telefonistas t1= new telefonistas();
+        _2telefonistas t1= new _2telefonistas();
         t1.setNome("Paula Silva");
         t1.setSalario(2000);
         t1.setCodEstacao(4321);
 
-        secretario s1=new secretario();
+        _2secretario s1=new _2secretario();
         s1.setNome("Marcos Silva");
         s1.setSalario(1800);
         s1.setRamal(200);

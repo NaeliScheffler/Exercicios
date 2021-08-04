@@ -1,6 +1,6 @@
 package atividade_10;
 
-public class funcionarios {
+public class _2funcionarios {
     private String nome;
     private double salario;
 

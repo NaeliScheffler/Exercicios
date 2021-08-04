@@ -1,6 +1,6 @@
 package atividade_10;
 
-public class secretario extends funcionarios{
+public class _2secretario extends _2funcionarios{
     private int ramal;
 
     public int getRamal(){

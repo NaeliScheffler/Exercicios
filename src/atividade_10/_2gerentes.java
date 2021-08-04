@@ -1,6 +1,6 @@
 package atividade_10;
 
-public class gerentes extends funcionarios {
+public class _2gerentes extends _2funcionarios {
     private String nomeUsuario;
     private String senha;
 

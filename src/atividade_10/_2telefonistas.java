@@ -1,6 +1,6 @@
 package atividade_10;
 
-public class telefonistas extends funcionarios {
+public class _2telefonistas extends _2funcionarios {
     private int codEstacao;
 
     public int getCodEstacao(){
