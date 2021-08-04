@@ -1,6 +1,6 @@
 package atividade_9;
 
-public class cliente_cinema {
+public class _4cliente_cinema {
     public int anoNascimento;
     public int numCarteira;
 

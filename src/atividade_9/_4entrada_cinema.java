@@ -1,12 +1,12 @@
 package atividade_9;
 
-public class entrada_cinema  {
+public class _4entrada_cinema  {
     public java.util.Date x;
     public float horario;
     public int sala;
     public float valor;
     public int anoFilme;
-    public cliente_cinema cliente;
+    public _4cliente_cinema cliente;
 
     public void iniciaAtrib( float horario, int sala, float valor,int anoFilme){
         this.horario = horario;
@@ -15,7 +15,7 @@ public class entrada_cinema  {
         this.anoFilme=anoFilme;
     }
 
-    public  double  calculaDesconto (cliente_cinema cliente) {
+    public  double  calculaDesconto (_4cliente_cinema cliente) {
         int ano=anoFilme-cliente.getAnoNascimento();
         double desconto =0;
         if (ano <  12 ) {
@@ -24,7 +24,7 @@ public class entrada_cinema  {
         return desconto;
     }
 
-    public  double  calculaDescontoEst(cliente_cinema cliente){
+    public  double  calculaDescontoEst(_4cliente_cinema cliente){
         int ano =anoFilme-cliente.getAnoNascimento();
         int cart = cliente.getNumCarteira();
         double desc =  0;
