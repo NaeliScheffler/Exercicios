@@ -1,14 +1,14 @@
 package atividade_9;
 
-public class cursoExe {
+public class _6cursoExe {
     public static void main(String[] args) {
-                cursos c1 =new cursos ( 11, 100 );
-                cursos c2 = new cursos ( 22 , 200 );
-                cursos c3 =  new  cursos ( 33 , 300 );
+                _6cursos c1 =new _6cursos ( 11, 100 );
+                _6cursos c2 = new _6cursos ( 22 , 200 );
+                _6cursos c3 =  new  _6cursos ( 33 , 300 );
                 aluno a1=new aluno(7);
                 aluno a2=new aluno(8);
                 aluno a3=new aluno(5);
-               instituicao e1 = new instituicao ();
+               _6instituicao e1 = new _6instituicao ();
                 e1 . listaCurso . add (c1);
                 e1 . listaCurso . add (c2);
                 e1 . listaCurso . add (c3);
@@ -19,7 +19,7 @@ public class cursoExe {
 
 
                 System.out.println ( " Quantidade de alunos aprovados: " );
-                for ( cursos cc : e1.listaCurso) {
+                for ( _6cursos cc : e1.listaCurso) {
                     System .out. println (cc .getCodigo () +  "  "  + cc . quantAprov ());
                 }
 

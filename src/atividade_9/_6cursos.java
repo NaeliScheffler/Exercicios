@@ -2,13 +2,13 @@ package atividade_9;
 
 import java.util.ArrayList;
 
-public class cursos {
+public class _6cursos {
     private int codigo;
     private float valorMens;
     ArrayList < aluno > listaAluno =  new  ArrayList <> ();
 
 
-        public cursos( int codigo , float valorMens ) {
+        public _6cursos( int codigo , float valorMens ) {
             this. codigo = codigo;
             this. valorMens = valorMens;
         }
