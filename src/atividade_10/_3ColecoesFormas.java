@@ -2,14 +2,14 @@ package atividade_10;
 
 import java.util.ArrayList;
 
-public class _3ColecoesFormas extends forma {
-    ArrayList<forma> formas = new ArrayList<>();
+public class _3ColecoesFormas extends _3forma {
+    ArrayList<_3forma> formas = new ArrayList<>();
 
     _3ColecoesFormas() {
-        this.formas = new ArrayList<forma>();
+        this.formas = new ArrayList<_3forma>();
     }
 
-    public void addForma(forma f) {
+    public void addForma(_3forma f) {
         this.formas.add(f);
     }
 
