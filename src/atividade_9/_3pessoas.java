@@ -1,9 +1,9 @@
 package atividade_9;
 
-public class pessoas {
+public class _3pessoas {
     public String nome;
-    public pessoas pai;
-    public pessoas mae;
+    public _3pessoas pai;
+    public _3pessoas mae;
 
     public String getNomep() {
         return nome;
@@ -13,23 +13,23 @@ public class pessoas {
         this.nome = nome;
     }
 
-    public pessoas getMae() {
+    public _3pessoas getMae() {
         return mae;
     }
 
-    public void setMae(pessoas mae) {
+    public void setMae(_3pessoas mae) {
         this.mae = mae;
     }
 
-    public pessoas getPai() {
+    public _3pessoas getPai() {
         return pai;
     }
 
-    public void setPai(pessoas pai) {
+    public void setPai(_3pessoas pai) {
         this.pai = pai;
     }
 
-    public void ehmesmaP(pessoas outraPessoa) {
+    public void ehmesmaP(_3pessoas outraPessoa) {
         if (this.nome.equals(outraPessoa.getNomep())) {
             if (this.mae.equals(outraPessoa.getMae())) {
                 System.out.println(" Eh a mesma pessoa ");
@@ -41,7 +41,7 @@ public class pessoas {
 
 
 
-    public void ehIrma(pessoas outraPessoa) {
+    public void ehIrma(_3pessoas outraPessoa) {
         if (this.mae.equals(outraPessoa.getMae())) {
             if (this.pai.equals(outraPessoa.getPai())) {
                 System.out.println(" Eh irma ");
@@ -51,7 +51,7 @@ public class pessoas {
         }
     }
 
-    public void antecess(pessoas outroNome) {
+    public void antecess(_3pessoas outroNome) {
         if (getPai() == outroNome) {
             System.out.println(" Eh seu pai ");
         }

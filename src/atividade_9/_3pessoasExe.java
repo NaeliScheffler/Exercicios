@@ -1,13 +1,13 @@
 package atividade_9;
 
-public class pessoasExe {
+public class _3pessoasExe {
     public static void main(String[] args) {
-       pessoas p1=new pessoas();
-       pessoas p2=new pessoas();
-        pessoas p3=new pessoas();
-        pessoas p4=new pessoas();
-        pessoas p5=new pessoas();
-        pessoas p6=new pessoas();
+       _3pessoas p1=new _3pessoas();
+        _3pessoas p2=new _3pessoas();
+        _3pessoas p3=new _3pessoas();
+        _3pessoas p4=new _3pessoas();
+        _3pessoas p5=new _3pessoas();
+        _3pessoas p6=new _3pessoas();
        p1.setNomep("Joao");
        p2.setNomep("Isabel");
        p3.setNomep("Luiz");
