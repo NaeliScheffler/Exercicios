@@ -4,12 +4,12 @@ import java.util.ArrayList;
 
 public class continenteExe {
     public static void main(String[] args) {
-            Continente c1 =  new Continente ();
+            _2Continente c1 =  new _2Continente ();
             c1 . setNome ( " América " );
-            pais p1 =  new pais (" BRA " , " BRASIL " , 8.516000 );
-            pais p2 =  new  pais ( " URU " , " URUGUAI " , 176.215);
-            pais p3 =  new  pais ( " BOL " , " BOLÍVIA " , 1.099000 );
-            ArrayList< pais > listaPais =  new  ArrayList < pais > ();
+            _1pais p1 =  new _1pais (" BRA " , " BRASIL " , 8.516000 );
+            _1pais p2 =  new  _1pais ( " URU " , " URUGUAI " , 176.215);
+            _1pais p3 =  new  _1pais ( " BOL " , " BOLÍVIA " , 1.099000 );
+            ArrayList< _1pais > listaPais =  new  ArrayList < _1pais > ();
             listaPais. add (p1);
             listaPais. add (p2);
             listaPais. add (p3);

@@ -1,8 +1,8 @@
 package atividade_9;
 import java.util.ArrayList;
-class Continente {
+class _2Continente {
     private String nome;
-    public ArrayList < pais > listaPais = new ArrayList<>();
+    public ArrayList < _1pais > listaPais = new ArrayList<>();
 
     public String getNome() {
         return nome;
@@ -12,16 +12,16 @@ class Continente {
         this.nome = nome;
     }
 
-    public ArrayList < pais > getPaises() {
+    public ArrayList < _1pais > getPaises() {
         return listaPais;
     }
 
-    public void setPaises(ArrayList < pais > listaPais) {
+    public void setPaises(ArrayList < _1pais > listaPais) {
         this.listaPais = listaPais;
     }
     public void dimensao() {
         double dimensaoTotal = 0;
-        for (pais p: listaPais) {
+        for (_1pais p: listaPais) {
             dimensaoTotal += p.getDimensao();
         }
         System.out.println(" Dimensao total do continente: " + dimensaoTotal);
@@ -29,7 +29,7 @@ class Continente {
 
     public void populacao() {
         int popTotal = 0;
-        for (pais p: listaPais) {
+        for (_1pais p: listaPais) {
             popTotal += p.getPop();
         }
         System.out.println(" População total do continente: " + popTotal);
@@ -38,7 +38,7 @@ class Continente {
     public void densidadeP() {
         int popTotal = 0;
         double dimensaoTotal = 0;
-        for (pais p: listaPais) {
+        for (_1pais p: listaPais) {
             popTotal += p.getPop();
             dimensaoTotal += p.getDimensao();
         }
