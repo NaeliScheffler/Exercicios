@@ -1,9 +1,9 @@
 package atividade_9;
 
-    public  class  aluno {
+    public  class  _6aluno {
         private float nota;
 
-        public  aluno( float  nota ) {
+        public  _6aluno( float  nota ) {
             this.nota = nota;
         }
 

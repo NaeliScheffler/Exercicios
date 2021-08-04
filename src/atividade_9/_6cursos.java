@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class _6cursos {
     private int codigo;
     private float valorMens;
-    ArrayList < aluno > listaAluno =  new  ArrayList <> ();
+    ArrayList < _6aluno > listaAluno =  new  ArrayList <> ();
 
 
         public _6cursos( int codigo , float valorMens ) {
@@ -33,13 +33,13 @@ public class _6cursos {
             return  this.listaAluno.size();
         }
 
-        public  void  addAluno( aluno  a1 ) {
+        public  void  addAluno( _6aluno  a1 ) {
             this.listaAluno.add (a1);
         }
 
         public  int  quantAprov() {
             int quant=0;
-            for ( aluno a1 : listaAluno) {
+            for ( _6aluno a1 : listaAluno) {
                 if (a1.getNota()>=  7 ) {
                     quant ++ ;
                 }
@@ -49,7 +49,7 @@ public class _6cursos {
 
         public  int  quantidadeReprov() {
             int quant=0;
-            for( aluno a1 : listaAluno) {
+            for( _6aluno a1 : listaAluno) {
                 if (a1.getNota () <  7 ) {
                     quant ++ ;
                 }

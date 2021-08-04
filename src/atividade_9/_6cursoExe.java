@@ -5,9 +5,9 @@ public class _6cursoExe {
                 _6cursos c1 =new _6cursos ( 11, 100 );
                 _6cursos c2 = new _6cursos ( 22 , 200 );
                 _6cursos c3 =  new  _6cursos ( 33 , 300 );
-                aluno a1=new aluno(7);
-                aluno a2=new aluno(8);
-                aluno a3=new aluno(5);
+                _6aluno a1=new _6aluno(7);
+                _6aluno a2=new _6aluno(8);
+                _6aluno a3=new _6aluno(5);
                _6instituicao e1 = new _6instituicao ();
                 e1 . listaCurso . add (c1);
                 e1 . listaCurso . add (c2);
