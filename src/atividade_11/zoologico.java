@@ -11,8 +11,7 @@ public class zoologico extends _1animal{
     public void percorreJaulas(){
         for(_1animal a:jaulas){
             a.emitirSom();
-            a.emitirSom();
-            a.
+            a.comportamento();
         }
     }
 }

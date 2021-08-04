@@ -6,6 +6,9 @@ public class _1animal {
     public boolean emiteSom;
     public void emitirSom()
     {
-        System.out.println("BHA BHA BHA!");
+        System.out.println("Som nao registrado.");
+    }
+    public void comportamento(){
+        System.out.println("Comportamento nao registrado.");
     }
 }
