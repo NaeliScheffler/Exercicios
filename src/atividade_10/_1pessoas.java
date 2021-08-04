@@ -1,6 +1,6 @@
 package atividade_10;
 
-public class _1pessoas extends _1escola {
+public class _1pessoas {
     public String nome;
 
 
