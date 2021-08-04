@@ -2,14 +2,14 @@ package atividade_9;
 import java.util.ArrayList;
 
 
-    public class pais {
+    public class _1pais {
         public String codigoIso;
         public String nome;
         public Integer pop;
         public Double dimensao;
-        public ArrayList<pais> paisFronteira = new ArrayList<>();
+        public ArrayList<_1pais> paisFronteira = new ArrayList<>();
 
-        public pais(String codigoIso, String nome, Double dimensao) {
+        public _1pais(String codigoIso, String nome, Double dimensao) {
             this.codigoIso = codigoIso;
             this.nome = nome;
             this.dimensao = dimensao;
@@ -48,17 +48,17 @@ import java.util.ArrayList;
             this.dimensao = dimensao;
         }
 
-        public boolean ehOMesmoPais(pais outroPais){
+        public boolean ehOMesmoPais(_1pais outroPais){
             return this.codigoIso.equals(outroPais.getCodigoIso());
         }
 
-        public boolean ehLimitrofe(pais outroPais){
+        public boolean ehLimitrofe(_1pais outroPais){
             return this.paisFronteira.contains(outroPais);
         }
 
-        public ArrayList<pais> vizinhosComuns(pais outroPais){
-            ArrayList<pais> comuns = new ArrayList<>();
-            for(pais p : this.paisFronteira){
+        public ArrayList<_1pais> vizinhosComuns(_1pais outroPais){
+            ArrayList<_1pais> comuns = new ArrayList<>();
+            for(_1pais p : this.paisFronteira){
                 if( outroPais.ehLimitrofe(p) ){
                     comuns.add(p);
                 }
