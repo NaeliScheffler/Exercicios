@@ -1,8 +1,8 @@
 package atividade_10;
 
-public class Circulo extends bidimensional{
+public class _3Circulo extends _3bidimensional{
 
-    public Circulo(char caracter) {
+    public _3Circulo(char caracter) {
         super(caracter);
     }
     public void desenhar(){

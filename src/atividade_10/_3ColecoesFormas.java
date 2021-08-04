@@ -2,10 +2,10 @@ package atividade_10;
 
 import java.util.ArrayList;
 
-public class ColecoesFormas extends forma {
+public class _3ColecoesFormas extends forma {
     ArrayList<forma> formas = new ArrayList<>();
 
-    ColecoesFormas() {
+    _3ColecoesFormas() {
         this.formas = new ArrayList<forma>();
     }
 

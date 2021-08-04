@@ -2,8 +2,8 @@ package atividade_10;
 
 public class formasExe   {
     public static void main(String[] args) {
-forma bidimensional =new forma();
-forma tridimensional=new forma();
+            _3forma bidimensional =new _3forma();
+            _3forma tridimensional=new _3forma();
 tridimensional cubo=new tridimensional();
         cubo.setArea(7);
         cubo.setVolume(8);

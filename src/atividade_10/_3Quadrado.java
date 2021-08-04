@@ -1,7 +1,7 @@
 package atividade_10;
 
-public class Quadrado extends bidimensional{
-    public Quadrado(char caracter) {
+public class _3Quadrado extends _3bidimensional{
+    public _3Quadrado(char caracter) {
         super(caracter);
     }
 

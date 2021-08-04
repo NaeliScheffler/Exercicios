@@ -1,8 +1,6 @@
 package atividade_10;
 
-import com.sun.source.tree.UsesTree;
-
-public class tridimensional extends forma{
+public class _3tridimensional extends _3forma{
     public float volume;
 
     public float getArea(){

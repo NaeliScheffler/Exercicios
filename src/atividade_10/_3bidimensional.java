@@ -1,6 +1,6 @@
 package atividade_10;
 
-public class bidimensional extends forma {
+public class _3bidimensional extends _3forma {
     public char caracter;
 
     public float getArea(){
@@ -13,7 +13,7 @@ public class bidimensional extends forma {
             System.out.println(" A classe eh:  " + getClass());
             System.out.println(" A area eh:  " + getArea());
         }
-public bidimensional(char caracter){
+public _3bidimensional(char caracter){
         this.caracter=caracter;
 }
     }

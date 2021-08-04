@@ -1,7 +1,7 @@
 package atividade_10;
 
-public class Triangulo extends bidimensional{
-    public Triangulo(char caracter) {
+public class _3Triangulo extends _3bidimensional{
+    public _3Triangulo(char caracter) {
         super(caracter);
     }
     public void desenhar(){
