@@ -61,14 +61,8 @@ public class cursos {
             return ( float ) (listaAluno . size () *  this . valorMens);
         }
 
-        @Override
-        public  String  toString (){
-            String string=  "Curso:"  +  this. getCodigo () +  "  " ;
-            for ( aluno a1 : listaAluno) {
-                string= string + a1 . toString () +  " - " ;
-            }
-            return string;
-        }
+
+
 
     }
 
