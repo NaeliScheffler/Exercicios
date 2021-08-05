@@ -1,16 +1,15 @@
 package atividade_11;
 
 public class ensinoBasico extends funcionarios {
-    public String escBasica;
-    double renda;
+    public String escolaB;
+    public double taxa=100;
 
-    public void mostraRenda() {
-        renda = comissoes + rendaBasica + (rendaBasica * 0.10);
-        System.out.println(renda);
-        rendaT.add(renda);
-        rendaB.add(renda);
+    public double getTaxa(){
+        return taxa;
+    }
+    public double getRendaTotal() {
+        return rendaBasica+taxa;
     }
 
-
-    }
+}
 

@@ -1,15 +1,11 @@
 package atividade_11;
 
-public class ensinoMedio extends funcionarios {
-    public String escBasica;
-    public String escMedia;
+public class ensinoMedio extends ensinoBasico {
+    public String escolaM;
+    public double taxa=650;
 
-    public void mostraRenda(){
-        double renda;
-        renda= comissoes+rendaBasica+(rendaBasica*0.10);
-        renda=renda+(renda*0.50);
-        System.out.println(renda);
-        rendaT.add(renda);
-        rendaM.add(renda);
+    public double getRendaTotal(){
+        return rendaBasica+taxa;
+
     }
 }
