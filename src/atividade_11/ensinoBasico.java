@@ -1,5 +1,7 @@
 package atividade_11;
 
+import java.util.ArrayList;
+
 public class ensinoBasico extends funcionarios {
     public String escolaB;
     public double taxa=100;
