@@ -1,14 +1,14 @@
 package atividade_12;
 
-public class itensProduto extends horarioCompra {
+public class itensProduto  {
     public int codigo;
     public  String descricao;
     public String setor;
     public double valorUnitario;
-    public float percentualDesconto;
+    public double percentualDesconto;
     public int quantidade;
 
-    public void itensProduto(int codigo,String descricao,String setor,double valorUnitario,float percentualDesconto,int quantidade){
+    public itensProduto(int codigo, String descricao, String setor, double valorUnitario, float percentualDesconto, int quantidade){
         this.codigo=codigo;
         this.descricao=descricao;
         this.setor=setor;
@@ -31,7 +31,7 @@ public class itensProduto extends horarioCompra {
     public double getValorUnitario(){
         return valorUnitario;
     }
-    public float getPercentualDesconto(){
+    public double getPercentualDesconto(){
         return percentualDesconto;
     }
     public int getQuantidade(){
@@ -49,7 +49,7 @@ public class itensProduto extends horarioCompra {
     public void setValorUnitario(double valorUnitario){
         this.valorUnitario=valorUnitario;
     }
-    public void setPercentualDesconto(int percentualDesconto){
+    public void setPercentualDesconto(double percentualDesconto){
         this.percentualDesconto=percentualDesconto;
     }
     public void setQuantidade(int quantidade){

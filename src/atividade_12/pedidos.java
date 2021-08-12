@@ -3,9 +3,9 @@ package atividade_12;
 import java.util.ArrayList;
 
 
-public class pedidos extends itensProduto {
+public class pedidos  {
     public ArrayList<itensProduto> itens=new ArrayList<>();
-    public String horas;
+    public ArrayList<horarioCompra> horas=new ArrayList<>();
     public double valorFinal;
 
 
@@ -23,17 +23,5 @@ public class pedidos extends itensProduto {
         System.out.println("\n Horario: "+horas);
     }
 
-    public void descontar(descontador d){
-        for(itensProduto i:itens){
-                if(i.getSetor()=="fruteira"&&i.getHora()>=20){
-                    percentualDesconto= (float) (valorUnitario*0.1);
-                }
-                if(i.getDia()=="Segunda"&& i.getSetor()=="Acougue"){
-                    percentualDesconto= (float) (valorUnitario*0.15);
-                }
-                if (i.getQuantidade()>=10&&i.getSetor()=="Bebidas"){
-                    percentualDesconto= (float) (valorUnitario*0.2);
-                }
-        }
-    }
+
 }
