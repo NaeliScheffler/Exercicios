@@ -8,7 +8,8 @@ public class itensProduto extends descontador  {
     public double percentualDesconto;
     public int quantidade;
 
-    public itensProduto(int codigo,String descricao,String setor,double valorUnitario,float percentualDesconto,int quantidade){
+    public itensProduto(int codigo,String descricao,String setor,double valorUnitario,double percentualDesconto,int quantidade){
+        super();
         this.codigo=codigo;
         this.descricao=descricao;
         this.setor=setor;

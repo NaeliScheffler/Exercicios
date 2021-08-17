@@ -3,11 +3,18 @@ package atividade_12;
 
 public class descontador  {
     public pedidos pedido;
-    public itensProduto prod;
+    public double desconto;
 
-    public void descontador(pedidos pedido) {
+
+
+    public descontador(pedidos pedido) {
         this.pedido = pedido;
     }
+
+    public descontador() {
+
+    }
+
     public pedidos  getPedido() {
         return pedido;
     }
@@ -15,24 +22,26 @@ public class descontador  {
         this.pedido=pedido;
     }
 
-    public double descontar(){
+    public void descontar(){
         double desconta=0;
-        for (int i=0;i<pedido.getItem().size();i++){
+        for (itensProduto prod: pedido.getItem()){
             if(prod.getSetor().equalsIgnoreCase("Fruteira")&&pedido.getHoras().getHora()>20){
-                desconta=0.10*(prod.getQuantidade()*prod.getValorUnitario());
+                prod.percentualDesconto=0.10;
             }
             else if(prod.getSetor().equalsIgnoreCase("Acougue")&&pedido.getHoras().getDia().equalsIgnoreCase("Segunda")){
-           desconta=0.15*(prod.getQuantidade()*prod.getValorUnitario());
+                prod.percentualDesconto=0.15;
         }
-        else if(prod.getSetor().equalsIgnoreCase("Bebidas")&&prod.getQuantidade()<=10){
-            desconta=  0.20*(prod.getQuantidade()*prod.getValorUnitario());
+        else if(prod.getSetor().equalsIgnoreCase("Bebidas")&&prod.getQuantidade()>=10){
+                prod.percentualDesconto=0.20;
         }
     }
-        return desconta;
+        pedido.calculaPrecoFinal();
         }
+    public String toString() {
+        return String.format("\nValor de desconto: %. 2f ", desconto);
 
 
-
+    }
     }
 
 

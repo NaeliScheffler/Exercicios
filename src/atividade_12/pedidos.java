@@ -9,9 +9,11 @@ public class pedidos  {
     public double valorFinal;
     public descontador desconto;
 
-    public pedidos(itensProduto itens,horarioCompra horas){
-        itens.add(itens);
+    public pedidos( ArrayList<itensProduto> itens,horarioCompra horas, descontador desconto){
+        super ();
+        this.itens=itens;
         this.horas=horas;
+        this.desconto=desconto;
     }
     public ArrayList<itensProduto> getItem(){
         return itens;
@@ -44,9 +46,12 @@ public class pedidos  {
     public double calculaPrecoFinal(){
         double aux=0;
         for(itensProduto i:itens){
-            aux+=i.getValorUnitario()*i.getQuantidade();
+            double aux2=0;
+            aux2=i.getValorUnitario()*i.getQuantidade();
+            aux+=aux2-(aux2*i.getPercentualDesconto());
         }
-        return this.valorFinal=aux-desconto.descontar();
+        this.valorFinal=aux;
+        return valorFinal;
     }
     public void imprimeNota(){
         for(itensProduto i:itens){
