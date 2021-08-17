@@ -1,6 +1,6 @@
 package atividade_12;
 
-public class itensProduto  {
+public class itensProduto extends descontador  {
     public int codigo;
     public  String descricao;
     public String setor;
@@ -8,7 +8,7 @@ public class itensProduto  {
     public double percentualDesconto;
     public int quantidade;
 
-    public itensProduto(int codigo, String descricao, String setor, double valorUnitario, float percentualDesconto, int quantidade){
+    public itensProduto(int codigo,String descricao,String setor,double valorUnitario,float percentualDesconto,int quantidade){
         this.codigo=codigo;
         this.descricao=descricao;
         this.setor=setor;
@@ -16,9 +16,6 @@ public class itensProduto  {
         this.percentualDesconto=percentualDesconto;
         this.quantidade=quantidade;
     }
-
-
-
     public int getCodigo(){
         return codigo;
     }
@@ -56,5 +53,13 @@ public class itensProduto  {
         this.quantidade=quantidade;
     }
 
+    @Override
+    public  String  toString () {
+        return"\nCodigo: "+codigo+"\nDescricao: "+descricao
+                +"\n Setor: "+setor+"\nValor Unitario: "+valorUnitario
+                +"\n Desconto: "+percentualDesconto+"\nQuantidade: "+quantidade+"\n";
     }
+
+}
+
 

@@ -5,7 +5,7 @@ public class horarioCompra {
     public int hora;
     public int minuto;
 
-    public horarioCompra(String dia, int hora, int minuto){
+    public horarioCompra(String dia,int hora,int minuto){
         this.dia=dia;
         this.hora=hora;
         this.minuto=minuto;
@@ -28,4 +28,9 @@ public class horarioCompra {
     public void setMinuto(int minuto){
         this.minuto=minuto;
 }
+    @Override
+    public String toString(){
+        return"\nDia: "+dia+"\nHora: "+hora+"\nMinuto: "+minuto;
+    }
 }
+
